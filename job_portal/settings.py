@@ -25,7 +25,7 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['modelviewset-api.onrender.com']
 # 'modelviewset-api.onrender.com'
 
 # Application definition
