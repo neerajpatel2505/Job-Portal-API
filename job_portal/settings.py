@@ -25,7 +25,7 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['job-portal-api-1-zrl1.onrender.com']
+ALLOWED_HOSTS = ['job-portal-api-1-zrl1.onrender.com','127.0.0.1']
 
 # Application definition
 
@@ -115,17 +115,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 # Where collectstatic will put all files for production
+STATIC_URL = "static/"
+
+# This is required for collectstatic
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# Public URL for static files
-STATIC_URL = '/static/'
-
-# Extra places for collectstatic to find static files (optional)
+# Optional but recommended
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # yeh tumhare project ke andar hona chahiye
+    os.path.join(BASE_DIR, 'static'),
 ]
 
-# Media (if you use it)
+# Media files (if you are using uploads)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
