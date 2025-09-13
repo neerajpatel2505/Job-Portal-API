@@ -25,7 +25,7 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['job-portal-api-1-zrl1.onrender.com','127.0.0.1']
+ALLOWED_HOSTS = ['job-portal-api-2-2vvf.onrender.com','127.0.0.1']
 
 # Application definition
 
